@@ -30,7 +30,7 @@ class CryptoConverter:
         except ValueError:
             raise ConvertionException(f"Не удалось обработать количество {amount}")
         
-        r = requests.get(f'https://v6.exchangerate-api.com/v6/6bbd6322c9e44fa79978fdf6/pair/{quote_ticker}/{base_ticker}/{amount}')
+        r = requests.get(f'https://v6.exchangerate-api.com/v6/xxxxxxxxx/pair/{quote_ticker}/{base_ticker}/{amount}')
                          
                          
         total_base = json.loads(r.content)['conversion_result']#[keys[base]] #* float(amount)
